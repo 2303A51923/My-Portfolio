@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vanga Sravani Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px;
+      background: #020617;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .links a {
+      margin: 10px;
+      display: inline-block;
+      color: #38bdf8;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #2563eb;
+      padding: 6px 12px;
+      margin: 5px;
+      border-radius: 6px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 15px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .achievements ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .achievements li {
+      background: #1e293b;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 6px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      background: #22c55e;
+      border: none;
+      padding: 10px;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Vanga Sravani</h1>
+  <p>B-Tech CSE Student | AI & Web Developer</p>
+
+  <div class="links">
+    <a href="https://github.com/2303A51923" target="_blank">💻 GitHub</a>
+    <a href="https://www.linkedin.com/in/sravani-vanga-374b8b29a/" target="_blank">🔗 LinkedIn</a>
+  </div>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p>
+    I Am A Computer Science student with strong foundations in Python, Machine Learning, and Web Development.
+    Passionate about solving real-world problems and building efficient applications.
+  </p>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>Python</span>
+    <span>Java</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>SQL</span>
+    <span>Machine Learning</span>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="projects">
+
+    <div class="card">
+      <h3>Landing Page (HTML & CSS)</h3>
+      <p>A responsive landing page for a tech startup.</p>
+    </div>
+
+    <div class="card">
+      <h3>Rain Water Harvesting System</h3>
+      <p>GIS-based system for sustainability analysis.</p>
+    </div>
+
+    <div class="card">
+      <h3>smart-weather-dashboard</h3>
+      <p>Real-time weather monitoring and visualization tool.</p>
+    </div>
+
+    <div class="card">
+      <h3>Dungeon Shooter Game</h3>
+      <p>Unity-based shooter game with interactive gameplay.</p>
+      <a href="https://github.com/2303A51923/dungeon_shooter_GMDD" target="_blank">Click here</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="achievements">
+  <h2>Achievements</h2>
+  <ul>
+    <li>✅ Solved 100+ problems on LeetCode</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <form onsubmit="sendMessage(event)">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>📧 vangasravani04@gmail.com | 📍 Warangal, India</p>
+</footer>
+
+<script>
+  function sendMessage(e) {
+    e.preventDefault();
+    alert("Message sent!");
+  }
+</script>
+
+</body>
+</html>
